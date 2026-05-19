@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repaso JavaScript</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Repaso de JavaScript</h1>
+
+    <nav>
+      <a href="#variables">Variables</a>
+      <a href="#operadores">Operadores</a>
+      <a href="#condicionales">Condicionales</a>
+      <a href="#bucles">Bucles</a>
+      <a href="#arrays">Arrays</a>
+      <a href="#funciones">Funciones</a>
+      <a href="#dom">DOM</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#math">Math</a>
+      <a href="#strings">Strings</a>
+      <a href="#fechas">Fechas</a>
+      <a href="#formularios">Formularios</a>
+      <a href="#errores">Errores</a>
+    </nav>
+  </header>
+
+  <section id="variables">
+    <h2>Variables y tipos</h2>
+
+    <h3>Explicación</h3>
+    <p>
+      Las variables sirven para guardar información.
+      En JavaScript podemos usar let, const y var.
+    </p>
+
+    <h3>Ejemplo</h3>
+
+    <pre>
+let nombre = "Alex";
+let edad = 20;
+
+console.log(nombre);
+console.log(edad);
+</pre>
+
+    <h3>Explicación del ejemplo</h3>
+    <p>
+      Se crean dos variables: una guarda texto y otra un número.
+    </p>
+  </section>
+
+  <section id="operadores">
+    <h2>Operadores</h2>
+
+    <h3>Explicación</h3>
+    <p>
+      Los operadores permiten hacer cálculos y comparaciones.
+    </p>
+
+    <pre>
+let a = 5;
+let b = 2;
+
+console.log(a + b);
+console.log(a > b);
+</pre>
+
+    <h3>Explicación del ejemplo</h3>
+    <p>
+      El código suma dos números y luego compara cuál es mayor.
+    </p>
+  </section>
+
+  <section id="condicionales">
+    <h2>Condicionales</h2>
+
+    <h3>Explicación</h3>
+    <p>
+      Los condicionales permiten tomar decisiones dependiendo de una condición.
+    </p>
+
+    <pre>
+let edad = 18;
+
+if (edad >= 18) {
+  console.log("Mayor de edad");
+} else {
+  console.log("Menor de edad");
+}
+</pre>
+
+    <h3>Explicación del ejemplo</h3>
+    <p>
+      Si la edad es mayor o igual a 18 muestra un mensaje diferente.
+    </p>
+  </section>
+
+  <section id="bucles">
+    <h2>Bucles</h2>
+
+    <h3>Explicación</h3>
+    <p>
+      Los bucles repiten código varias veces.
+    </p>
+
+    <pre>
+for(let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+</pre>
+
+    <h3>Explicación del ejemplo</h3>
+    <p>
+      El bucle muestra los números del 1 al 5.
+    </p>
+  </section>
+
+  <section id="arrays">
+    <h2>Arrays</h2>
+
+    <h3>Explicación</h3>
+    <p>
+      Los arrays guardan varios valores dentro de una sola variable.
+    </p>
+
+    <pre>
+let colores = ["rojo", "azul", "verde"];
+
+console.log(colores[0]);
+</pre>
+
+    <h3>Explicación del ejemplo</h3>
+    <p>
+      Se crea un array y se muestra el primer elemento.
+    </p>
+  </section>
+
+  <section id="funciones">
+    <h2>Funciones</h2>
+
+    <h3>Explicación</h3>
+    <p>
+      Las funciones agrupan código para reutilizarlo.
+    </p>
+
+    <pre>
+function saludar(nombre) {
+  return "Hola " + nombre;
+}
+
+console.log(saludar("Alex"));
+</pre>
+
+    <h3>Explicación del ejemplo</h3>
+    <p>
+      La función recibe un nombre y devuelve un saludo.
+    </p>
+  </section>
+
+  <section id="dom">
+    <h2>DOM</h2>
+
+    <h3>Explicación</h3>
+    <p>
+      El DOM permite modificar elementos HTML desde JavaScript.
+    </p>
+
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+
+    <p id="textoDOM">Texto original</p>
+
+    <pre>
+function cambiarTexto() {
+  document.getElementById("textoDOM").innerHTML = "Texto cambiado";
+}
+</pre>
+
+    <h3>Explicación del ejemplo</h3>
+    <p>
+      Al pulsar el botón cambia el contenido del párrafo.
+    </p>
+  </section>
+
+  <section id="eventos">
+    <h2>Eventos</h2>
+
+    <h3>Explicación</h3>
+    <p>
+      Los eventos detectan acciones del usuario como clics o teclas.
+    </p>
+
+    <button id="botonEvento">Haz clic</button>
+
+    <p id="mensajeEvento"></p>
+
+    <pre>
+boton.addEventListener("click", function() {
+  mensaje.innerHTML = "Has hecho clic";
+});
+</pre>
+
+    <h3>Explicación del ejemplo</h3>
+    <p>
+      Cuando el usuario pulsa el botón aparece un mensaje.
+    </p>
+  </section>
+
+  <section id="math">
+    <h2>Math</h2>
+
+    <h3>Explicación</h3>
+    <p>
+      Math incluye funciones matemáticas.
+    </p>
+
+    <pre>
+let numero = Math.random();
+
+console.log(numero);
+</pre>
+
+    <h3>Explicación del ejemplo</h3>
+    <p>
+      Genera un número aleatorio.
+    </p>
+  </section>
+
+  <!-- STRINGS -->
+  <section id="strings">
+    <h2>Strings</h2>
+
+    <h3>Explicación</h3>
+    <p>
+      Los strings son cadenas de texto.
+    </p>
+
+    <pre>
+let texto = "JavaScript";
+
+console.log(texto.length);
+</pre>
+
+    <h3>Explicación del ejemplo</h3>
+    <p>
+      Se muestra la longitud del texto.
+    </p>
+  </section>
+
+  <!-- FECHAS -->
+  <section id="fechas">
+    <h2>Fechas</h2>
+
+    <h3>Explicación</h3>
+    <p>
+      JavaScript permite trabajar con fechas y horas.
+    </p>
+
+    <pre>
+let fecha = new Date();
+
+console.log(fecha);
+</pre>
+
+    <h3>Explicación del ejemplo</h3>
+    <p>
+      Se obtiene la fecha actual del sistema.
+    </p>
+  </section>
+
+  <section id="formularios">
+    <h2>Formularios</h2>
+
+    <h3>Explicación</h3>
+    <p>
+      Los formularios permiten introducir datos.
+    </p>
+
+    <input type="text" id="nombre">
+    <button onclick="mostrarNombre()">Enviar</button>
+
+    <p id="resultado"></p>
+
+    <pre>
+function mostrarNombre() {
+  let nombre = document.getElementById("nombre").value;
+  document.getElementById("resultado").innerHTML = nombre;
+}
+</pre>
+
+    <h3>Explicación del ejemplo</h3>
+    <p>
+      El usuario escribe un nombre y se muestra en pantalla.
+    </p>
+  </section>
+
+  <section id="errores">
+    <h2>Errores típicos</h2>
+
+    <h3>Explicación</h3>
+    <p>
+      Algunos errores comunes son olvidar llaves, usar mal los nombres o no cerrar etiquetas.
+    </p>
+
+    <pre>
+console.log(nombre)
+</pre>
+
+    <h3>Explicación del ejemplo</h3>
+    <p>
+      Si la variable no existe aparecerá un error en consola.
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
